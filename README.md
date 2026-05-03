@@ -1,46 +1,6 @@
-# Ultimate Sorting Benchmark (M4 Mac) 🇺🇸 🇷🇺
+# Ultimate Sorting Benchmark (M4 Mac)
 
-<div align="center">
-  
-**English** | [Русский](#русский)
-
-</div>
-
----
-
-## 🌐 Navigation / Навигация
-
-- [English Version](#english)
-  - [📊 Key Highlights](#-key-highlights)
-  - [🏗️ Architecture](#️-architecture)
-  - [🚀 Quick Start](#-quick-start)
-  - [📈 Benchmark Results](#-benchmark-results)
-  - [🧵 Thread Scaling Analysis](#-thread-scaling-analysis)
-  - [🏆 Algorithm Recommendations](#-algorithm-recommendations)
-  - [🔧 Technical Details](#-technical-details)
-  - [📝 Code Structure](#-code-structure)
-  - [🎯 Performance Insights](#-performance-insights)
-  - [🔮 Future Improvements](#-future-improvements)
-  - [🤝 Contributing](#-contributing)
-  - [📄 License](#-license)
-
-- [Русская версия](#русский)
-  - [📊 Ключевые особенности](#-ключевые-особенности)
-  - [🏗️ Архитектура](#️-архитектура)
-  - [🚀 Быстрый старт](#-быстрый-старт)
-  - [📈 Результаты бенчмарка](#-результаты-бенчмарка)
-  - [🧵 Анализ масштабирования потоков](#-анализ-масштабирования-потоков)
-  - [🏆 Рекомендации по алгоритмам](#-рекомендации-по-алгоритмам)
-  - [🔧 Технические детали](#-технические-детали-1)
-  - [📝 Структура кода](#-структура-кода)
-  - [🎯 Инсайты производительности](#-инсайты-производительности)
-  - [🔮 Будущие улучшения](#-будущие-улучшения)
-  - [🤝 Участие в разработке](#-участие-в-разработке)
-  - [📄 Лицензия](#-лицензия-1)
-
----
-
-# English 🇺🇸
+> **Русская версия доступна ниже** | **Russian version available below**
 
 A comprehensive C++ benchmark comparing single-threaded vs. multi-threaded sorting algorithms on Apple M4 architecture. This project implements and analyzes four parallel sorting algorithms with detailed performance metrics across different data patterns and thread counts.
 
@@ -78,15 +38,21 @@ A comprehensive C++ benchmark comparing single-threaded vs. multi-threaded sorti
 ### Build & Run
 
 ```bash
-# Clone and navigate
-git clone <your-repo-url>
-cd threads
-
 # Compile with optimizations
 clang++ -std=c++17 -O3 -pthread -o benchmark_sort main.cpp
 
 # Run comprehensive benchmark
 ./benchmark_sort
+```
+
+### Quick Test (smaller dataset)
+```bash
+# Temporarily change sizes for faster testing
+sed -i '' 's/100000000/10000000/g; s/200000000/20000000/g; s/400000000/40000000/g' main.cpp
+clang++ -std=c++17 -O3 -pthread -o benchmark_sort main.cpp
+./benchmark_sort
+# Restore original sizes
+sed -i '' 's/10000000/100000000/g; s/20000000/200000000/g; s/40000000/400000000/g' main.cpp
 ```
 
 ## 📈 Benchmark Results (M4, 9 Threads)
@@ -245,7 +211,7 @@ MIT License - see LICENSE file for details.
 
 ---
 
-**Created by**: [Your Name]  
+**Created by**: fedosikser  
 **Platform**: Apple M4 Mac (8 performance + 4 efficiency cores)  
 **Language**: C++17  
 **Focus**: Parallel algorithms, performance optimization, benchmarking
@@ -258,7 +224,7 @@ MIT License - see LICENSE file for details.
 
 </div>
 
-# Русский 🇷🇺
+# Русская версия 🇷🇺
 
 Комплексный бенчмарк на C++, сравнивающий однопоточные и многопоточные алгоритмы сортировки на архитектуре Apple M4. В проекте реализованы и проанализированы четыре параллельных алгоритма сортировки с подробными метриками производительности для разных типов данных и количеств потоков.
 
@@ -296,15 +262,21 @@ MIT License - see LICENSE file for details.
 ### Сборка и запуск
 
 ```bash
-# Клонирование и переход
-git clone <your-repo-url>
-cd threads
-
 # Компиляция с оптимизациями
 clang++ -std=c++17 -O3 -pthread -o benchmark_sort main.cpp
 
 # Запуск комплексного бенчмарка
 ./benchmark_sort
+```
+
+### Быстрый тест (меньший датасет)
+```bash
+# Временно изменить размеры для быстрого тестирования
+sed -i '' 's/100000000/10000000/g; s/200000000/20000000/g; s/400000000/40000000/g' main.cpp
+clang++ -std=c++17 -O3 -pthread -o benchmark_sort main.cpp
+./benchmark_sort
+# Вернуть оригинальные размеры
+sed -i '' 's/10000000/100000000/g; s/20000000/200000000/g; s/40000000/400000000/g' main.cpp
 ```
 
 ## 📈 Результаты бенчмарка (M4, 9 потоков)
@@ -463,15 +435,7 @@ MIT License - смотрите файл LICENSE для деталей.
 
 ---
 
-**Создано**: [Ваше Имя]  
+**Создано**: fedosikser  
 **Платформа**: Apple M4 Mac (8 производительных + 4 энергоэффективных ядра)  
 **Язык**: C++17  
 **Фокус**: Параллельные алгоритмы, оптимизация производительности, бенчмаркинг
-
----
-
-<div align="center">
-  
-[⬆ Наверх / Back to top](#ultimate-sorting-benchmark-m4-mac-)
-
-</div>
