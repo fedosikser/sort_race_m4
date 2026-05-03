@@ -28,3 +28,8 @@ Thumbs.db
 *.tmp
 *.temp
 *.log
+
+# Release artifacts
+release-*/
+*.tar.gz
+*.zip

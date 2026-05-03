@@ -2,6 +2,8 @@
 
 > **Русская версия доступна ниже** | **Russian version available below**
 
+[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/fedosikser/sort_race_m4/releases/tag/v1.0.0) [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![Platform](https://img.shields.io/badge/platform-macOS-lightgrey)](https://github.com/fedosikser/sort_race_m4) [![C++](https://img.shields.io/badge/C++-17-red)](https://en.cppreference.com/w/cpp/17)
+
 A comprehensive C++ benchmark comparing single-threaded vs. multi-threaded sorting algorithms on Apple M4 architecture. This project implements and analyzes four parallel sorting algorithms with detailed performance metrics across different data patterns and thread counts.
 
 ## 📊 Key Highlights
@@ -225,6 +227,8 @@ MIT License - see LICENSE file for details.
 </div>
 
 # Русская версия 🇷🇺
+
+[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/fedosikser/sort_race_m4/releases/tag/v1.0.0) [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![Platform](https://img.shields.io/badge/platform-macOS-lightgrey)](https://github.com/fedosikser/sort_race_m4) [![C++](https://img.shields.io/badge/C++-17-red)](https://en.cppreference.com/w/cpp/17)
 
 Комплексный бенчмарк на C++, сравнивающий однопоточные и многопоточные алгоритмы сортировки на архитектуре Apple M4. В проекте реализованы и проанализированы четыре параллельных алгоритма сортировки с подробными метриками производительности для разных типов данных и количеств потоков.
 
